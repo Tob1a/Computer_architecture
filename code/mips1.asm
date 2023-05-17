@@ -26,7 +26,7 @@ add $t2, $t0, $t1
 
 loop: sll $t1, $s3, 2 #$t1 = 4*i
 add $t1, $t1, $s6 # $t1 = address of save[i]
-lw $t0., 0($t1) # $t0 = save[i]
+lw $t0, 0($t1) # $t0 = save[i]
 bne $t0, $s5, Exit
 add $s3, $s3, 1 # i += 1
 j loop  #salto obligatorio a loop
